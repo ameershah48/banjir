@@ -52,8 +52,8 @@
                             {{ $place->name }}
                         </td>
                         <td>
-                            {{ $place->phone }}
-
+                            <input onclick="copy('phone-'+{{ $place->id }})" value="{{ $place->phone }}"
+                                id="phone-{{ $place->id }}">
                         </td>
                         <td>
                             {{ $place->details }}
@@ -69,7 +69,8 @@
                             {{ $place->radius }}
                         </td>
                         <td>
-                            <input onclick="copy({{ $place->id }})" type="text" id="{{ $place->id }}"
+                            <input onclick="copy('location-'+{{ $place->id }})" type="text"
+                                id="location-{{ $place->id }}"
                                 value="{{ number_format($place->latitude, 4) }},{{ number_format($place->longitude, 4) }}">
                         </td>
                     </tr>
@@ -96,7 +97,7 @@
         function copy(id) {
             var copyText = document.getElementById(id);
             copyText.select();
-            copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            copyText.setSelectionRange(0, 99999);
         }
     </script>
 

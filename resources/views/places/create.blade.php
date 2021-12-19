@@ -25,7 +25,7 @@
                     <label for="lat">Latitude</label>
                 </td>
                 <td>
-                    <input type="text" name="latitude" placeholder="latitude" id="lat">
+                    <input type="text" name="latitude" id="lat">
                 </td>
             </tr>
             <tr>
@@ -33,7 +33,7 @@
                     <label for="lon">Longitude</label>
                 </td>
                 <td>
-                    <input type="text" name="longitude" placeholder="longitude" id="lon">
+                    <input type="text" name="longitude" id="lon">
                 </td>
             </tr>
             <tr>
@@ -41,7 +41,7 @@
                     <label for="name">Name</label>
                 </td>
                 <td>
-                    <input type="text" name="name" placeholder="name" id="name">
+                    <input type="text" name="name" id="name">
                 </td>
             </tr>
             <tr>
@@ -49,7 +49,7 @@
                     <label for="phone">Phone</label>
                 </td>
                 <td>
-                    <input type="phone" name="phone" placeholder="phone" id="phone">
+                    <input type="phone" name="phone" id="phone">
                 </td>
             </tr>
             <tr>
