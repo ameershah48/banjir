@@ -11,7 +11,8 @@
 <body>
     <button onclick="location.href='{{ route('places.create') }}'">Add new place</button>
     <hr>
-    <button onclick="getLocation()">Get current location</button>
+
+    <a href="#" onclick="getLocation()">Get current location</a>
 
     <form>
         <input type="text" name="latitude" placeholder="latitude" id="lat">
@@ -68,7 +69,8 @@
                             {{ $place->radius }}
                         </td>
                         <td>
-                            <input onclick="copy({{ $place->id }})" type="text" id="{{ $place->id }}" value="{{ number_format($place->latitude, 4) }},{{ number_format($place->longitude, 4) }}">
+                            <input onclick="copy({{ $place->id }})" type="text" id="{{ $place->id }}"
+                                value="{{ number_format($place->latitude, 4) }},{{ number_format($place->longitude, 4) }}">
                         </td>
                     </tr>
                 @endforeach

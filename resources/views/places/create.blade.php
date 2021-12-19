@@ -16,8 +16,13 @@
 
         <table>
             <tr>
+                <td colspan="2">
+                    <a href="#" onclick="getLocation()">Get my current location</a>
+                </td>
+            </tr>
+            <tr>
                 <td>
-                    <label for="lat">latitude</label>
+                    <label for="lat">Latitude</label>
                 </td>
                 <td>
                     <input type="text" name="latitude" placeholder="latitude" id="lat">
@@ -25,20 +30,15 @@
             </tr>
             <tr>
                 <td>
-                    <label for="lon">longitude</label>
+                    <label for="lon">Longitude</label>
                 </td>
                 <td>
                     <input type="text" name="longitude" placeholder="longitude" id="lon">
                 </td>
             </tr>
             <tr>
-                <td colspan="2">
-                    <a href="#" onclick="getLocation()">Get current location</a>
-                </td>
-            </tr>
-            <tr>
                 <td>
-                    <label for="name">name</label>
+                    <label for="name">Name</label>
                 </td>
                 <td>
                     <input type="text" name="name" placeholder="name" id="name">
@@ -46,7 +46,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="phone">phone</label>
+                    <label for="phone">Phone</label>
                 </td>
                 <td>
                     <input type="phone" name="phone" placeholder="phone" id="phone">
@@ -54,7 +54,7 @@
             </tr>
             <tr>
                 <td>
-                    <label for="">details</label>
+                    <label for="">Details</label>
                 </td>
                 <td>
                     <textarea name="details" cols="30" rows="5"></textarea>
@@ -63,7 +63,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <button type="submit">submit</button>
+                    <button type="submit">Submit</button>
                 </td>
             </tr>
         </table>
